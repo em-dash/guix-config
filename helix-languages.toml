@@ -1,0 +1,38 @@
+# [[language]]
+# name = "peg"
+# scope = "source.peg"
+# file-types = ["peg"]
+# indent = { tab-width = 4, unit = "    " }
+# comment-tokens = "#"
+
+[[language]]
+name = "zig"
+rulers = [100]
+text-width = 100
+# language-servers = [ { name = "zls", except-features = [ "completion", "diagnostics", "signature-help", "hover" ] } ]
+language-servers = [ { name = "zls" }]
+
+
+[[grammar]]
+name = "zig"
+source = { git = "https://github.com/tree-sitter-grammars/tree-sitter-zig", rev = "HEAD" }
+
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = "    "}
+
+[language-server.haskell-language-server]
+config.haskell.formattingProvider = "ormolu"
+
+[[language]]
+name = "haskell"
+language-servers = [ "haskell-language-server" ]
+auto-format = true
+
+[[language]]
+name = "scheme"
+
+[language.auto-pairs]
+'(' = ')'
+'"' = '"'
+

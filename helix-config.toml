@@ -1,0 +1,56 @@
+theme = "carbonfox"
+
+[editor]
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+i = "move_char_right"
+I = "no_op"
+k = "insert_mode"
+K = ["goto_first_nonwhitespace", "insert_mode"]
+a = ["move_char_right", "insert_mode"]
+n = "move_line_down"
+N = "join_selections"
+e = "move_line_up"
+j = "search_next"
+J = "search_prev"
+D = "delete_char_backward"
+l = "move_next_word_end"
+[keys.normal.g]
+i = "goto_line_end"
+n = "goto_last_line"
+e = "goto_file_start"
+g = "goto_line"
+j = "no_op"
+k = "no_op"
+l = "no_op"
+[keys.normal.v]
+h = "move_char_left"
+i = "move_char_right"
+k = "insert_mode"
+n = "move_line_down"
+e = "move_line_up"
+j = "search_next"
+S-j = "search_prev"
+l = "move_next_word_end"
+[keys.normal.v.g]
+i = "goto_line_end"
+n = "goto_last_line"
+e = "goto_file_start"
+j = "no_op"
+k = "no_op"
+l = "no_op"
+[keys.normal.z]
+n = "scroll_down"
+e = "scroll_up"
+j = "no_op"
+k = "no_op"
+[keys.normal."space"]
+c = "toggle_comments"
+n = "goto_next_buffer"
+e = "goto_previous_buffer"
