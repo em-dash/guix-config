@@ -11,18 +11,17 @@
              (gnu home services guix)
              (gnu home services shells)
              (guix gexp)
-             (guix channels)
-             ; (saayix packages))
-             (saayix))
+             (guix channels))
 
 (home-environment
   (packages (map specification->package
                  '("labwc" "rofi"
-                   ; "ghostty"
+                   "ghostty"
                    "guile-lsp-server"
                    "kitty"
-                   "helix"
+                   "helix@23.10"
                    "git"
+                   "openssh"
                    "zig"
                    "acpi"
                    "bat"
@@ -48,6 +47,8 @@
                             ("labwc/rc.xml" ,(local-file "labwc/rc.xml"))
                             ("labwc/shutdown" ,(local-file "labwc/shutdown"))
                             ("labwc/themerc" ,(local-file "labwc/themerc"))
+                            ;; ghostty
+                            ("ghostty/config" ,(local-file "ghostty-config"))
                             ;; rofi
                             ("rofi/config.rasi" ,(local-file
                                                   "rofi-config.rasi"))))

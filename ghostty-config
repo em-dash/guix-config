@@ -1,0 +1,49 @@
+# visuals
+theme = carbonfox
+window-padding-balance = true
+gtk-adwaita = false
+window-decoration = server
+
+adjust-cell-height = 20%
+
+# font
+font-family = "Maple Mono NL NF CN"
+font-feature = -calt
+# font-family = "WenQuanYi Micro Hei Mono"
+# currently not working
+# font-family = "OpenMoji Color"
+# font-style = "OpenMoji Color"
+# font-style-bold = "OpenMoji Color"
+# font-style-italic = "OpenMoji Color"
+# font-style-bold-italic = "OpenMoji Color"
+
+font-size = 14
+
+# mouse
+mouse-hide-while-typing = true
+
+# window & process
+gtk-titlebar = false
+gtk-single-instance = false
+command = /bin/fish
+
+# INPUT
+# keybind = ctrl+alt+r=reload_config
+keybind = shift+page_up=scroll_page_up
+keybind = shift+page_down=scroll_page_down
+keybind = shift+home=scroll_to_top
+keybind = shift+end=scroll_to_bottom
+keybind = f11=toggle_fullscreen
+keybind = ctrl+alt+n=jump_to_prompt:+1
+keybind = ctrl+alt+e=jump_to_prompt:-1
+
+# clipboard
+clipboard-trim-trailing-spaces = true
+clipboard-read = allow
+clipboard-write = allow
+clipboard-paste-protection = false
+copy-on-select = false
+
+# FUNCTIONALITY
+shell-integration = fish
+shell-integration-features = true

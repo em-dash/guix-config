@@ -683,8 +683,8 @@
 
   <windowRules>
       <windowRule identifier="*"><action name="ToggleDecorations"/></windowRule>
-      <windowRule identifier="chromium"><action name="ToggleDecorations"/></windowRule>
-      <windowRule identifier="chromium"><action name="ToggleDecorations"/></windowRule>
+      <windowRule identifier="chromium-browser"><action name="ToggleDecorations"/></windowRule>
+      <windowRule identifier="chromium-browser"><action name="ToggleDecorations"/></windowRule>
   </windowRules>
 
   <menu>
