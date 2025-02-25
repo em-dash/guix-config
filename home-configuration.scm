@@ -46,7 +46,26 @@
                    "slurp")))
 
   (services
-   (append (list (service home-fish-service-type)
+   (append (list (service home-fish-service-type
+                          (home-fish-configuration (aliases '(("ls"
+                                                               "ls --color=auto")
+                                                              ("la" "ls -A")
+                                                              ("ll" "ls -lAh")
+                                                              ("lsl"
+                                                               "ls -lAh | less")
+                                                              ("asdf"
+                                                               "setxkbmap us colemak")
+                                                              ("quit" exit)
+                                                              ("grep"
+                                                               "grep --color=auto")
+                                                              ("doasedit"
+                                                               "doas helix --config ~/.config/helix/config.toml")
+                                                              ("tg"
+                                                               "grep -rI --exclude-dir .* --exclude .* . -e")))
+                                                   (environment-variables '(("GITHUBMAIL"
+                                                                             "33614480+em-dash@users.noreply.github.com")))
+
+                                                   ))
                  (service home-xdg-configuration-files-service-type
                           `( ;helix
                              ("helix/config.toml" ,(local-file
