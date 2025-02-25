@@ -19,6 +19,7 @@
 
 # XKB_DEFAULT_LAYOUT=se
 XKB_DEFAULT_LAYOUT=us(colemak)
+XKB_DEFAULT_OPTIONS=caps:backspace
 # XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
 # XKB_DEFAULT_OPTIONS=grp:shift_caps_toggle
 
