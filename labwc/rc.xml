@@ -687,6 +687,8 @@
       <windowRule identifier="chromium-browser"><action name="ToggleDecorations"/></windowRule>
       <windowRule identifier="firefox"><action name="ToggleDecorations"/></windowRule>
       <windowRule identifier="firefox"><action name="ToggleDecorations"/></windowRule>
+      <windowRule identifier="librewolf"><action name="ToggleDecorations"/></windowRule>
+      <windowRule identifier="librewolf"><action name="ToggleDecorations"/></windowRule>
   </windowRules>
 
   <menu>

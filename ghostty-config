@@ -1,15 +1,18 @@
 # visuals
 theme = carbonfox
-window-padding-balance = true
+# window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 0
+window-padding-color = "extend"
 gtk-adwaita = false
 window-decoration = server
 
 adjust-cell-height = 20%
 
 # font
-font-family = "Maple Mono NL NF CN"
-font-feature = -calt
-# font-family = "WenQuanYi Micro Hei Mono"
+# font-family = "Maple Mono NL NF CN"
+font-family = "Recursive Mono Linear Static"
+# font-feature = -calt
 # currently not working
 # font-family = "OpenMoji Color"
 # font-style = "OpenMoji Color"
@@ -17,7 +20,7 @@ font-feature = -calt
 # font-style-italic = "OpenMoji Color"
 # font-style-bold-italic = "OpenMoji Color"
 
-font-size = 14
+font-size = 16
 
 # mouse
 mouse-hide-while-typing = true
@@ -25,7 +28,7 @@ mouse-hide-while-typing = true
 # window & process
 gtk-titlebar = false
 gtk-single-instance = false
-command = /bin/fish
+command = "fish"
 
 # INPUT
 # keybind = ctrl+alt+r=reload_config
