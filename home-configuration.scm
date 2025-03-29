@@ -64,27 +64,7 @@
     (service home-fish-service-type
              (home-fish-configuration
               (config
-               (list (plain-file
-                      "extra-config.fish"
-                      "\
-abbr -a la ls -lA
-abbr -a ll ls -lAh
-abbr -a lsl ls -lAh | bat --style=plain
-
-alias quit='exit'
-
-function mkcd -a target
-    mkdir -p $target
-    cd $target
-end
-
-function fish_greeting
-    echo (set_color brblack)~(set_color normal)bienvenue à (set_color -b brmagenta)(set_color -i black)$hostname(set_color normal)(set_color brblack)~(set_color normal)
-    echo
-    echo (set_color -i)c'est (date), ou (date +%s) après l'époque
-    echo
-    echo bonne chasse
-end")))
+               (list (local-file "extra.fish")))
               (environment-variables
                '(("GITHUBMAIL" . "33614480+em-dash@users.noreply.github.com")))))
     (service home-files-service-type
