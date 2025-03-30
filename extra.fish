@@ -19,7 +19,6 @@ function fish_greeting
 end
 
 function line_break
-    printf "\n"
     set_color brblack
     for i in (seq $COLUMNS)
         printf "\Uf05c8"
@@ -35,12 +34,13 @@ function fish_prompt
         set -l display_status (string join '' (set_color normal) $last_status)
     end
 
-    set -f guix_environment (string join '' (set_color blue) "env")
+    set -f guix_environment (string join '' (set_color blue) (print_guix_env))
     if test -z $GUIX_ENVIRONMENT
         set -e guix_environment
     end
 
     line_break
-    string replace -a / (string join (set_color brblack) / (set_color magenta)) (string join '' $display_status (pwd) ' ' $guix_environment)
+    string replace -a / (string join '' (set_color brblack) / (set_color magenta)) (string join '' $display_status (pwd) ' ' $guix_environment)
+    printf (set_color brblack)
     printf "¿ "
 end
